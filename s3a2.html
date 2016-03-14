@@ -1,0 +1,60 @@
+<html>
+<head>
+	<title>advanceds3a1</title>
+<script type="text/javascript">
+function add(a,b)
+{
+	this.a = a;
+	this.b = b;
+	var c = +a + +b;
+	this.result = function()
+	{
+		alert("The sum is "+c);
+	}
+}
+function mul(a,b)
+{
+	this.a = a;
+	this.b = b;
+	var c = a*b;
+	this.result = function()
+	{
+		alert("The product is "+c);
+	}
+}
+function sub(a,b)
+{
+	this.a = a;
+	this.b = b;
+	var c = a-b;
+	this.result = function()
+	{
+		alert("The difference is "+c);
+	}
+}
+function div(a,b)
+{
+	this.a = a;
+	this.b = b;
+	var c = a/b;
+	this.result = function()
+	{
+		alert("The division is "+c);
+	}
+}
+var x = window.prompt("Enter value for first number ");
+var y = window.prompt("Enter value for second number ");
+var addit = new add(x,y);
+addit.result();
+var subit = new sub(x,y);
+subit.result();
+var mulit = new mul(x,y);
+mulit.result();
+var divit = new div(x,y);
+divit.result();
+</script>
+</head>
+<body>
+
+</body>
+</html>
